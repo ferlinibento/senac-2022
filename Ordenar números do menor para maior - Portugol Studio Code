@@ -1,0 +1,31 @@
+//Ordernar números do menor para o maior
+programa
+{	
+	funcao inicio()
+	{
+
+		inteiro numeros[4], tam, cont1, cont2, copia
+		
+		para (cont1=0; cont1<3; cont1++){
+			escreva("Informe um número: ")
+			leia(numeros[cont1])
+		}
+
+		tam = 3
+
+	    para(cont1 = 0; cont1 <= tam; cont1++){
+	      para(cont2 = 0; cont2 < tam - 1; cont2++){
+	        se(numeros[cont2] > numeros[cont2+1]){
+	          copia = numeros[cont2]
+	          numeros[cont2] = numeros[cont2+1]
+	          numeros[cont2+1] = copia
+	        }
+	      }
+	    }
+
+		para (cont1=0; cont1<3; cont1++){
+			escreva("\n"+numeros[cont1])
+		}	
+		
+	}
+}
