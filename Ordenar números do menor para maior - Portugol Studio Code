@@ -1,4 +1,4 @@
-//Ordernar números do menor para o maior
+//Ordenar números do menor para o maior
 programa
 {	
 	funcao inicio()
